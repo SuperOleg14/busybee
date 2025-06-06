@@ -1,0 +1,44 @@
+.first-screen-about {
+  padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 10px;
+  }
+
+  &__photo {
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 715px;
+    margin-top: 30px;
+
+    h2 {
+      font: 38px/48px @fontPoppins;
+      font-weight: 700;
+      color: #283238;
+      letter-spacing: -0.38px;
+      margin-bottom: 30px;
+      margin-top: 0;
+
+      @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 15px;
+      }
+    }
+
+    p {
+      font: 16px/24px @fontPoppins;
+      font-weight: 400;
+      color: #3e4c58;
+      margin-top: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

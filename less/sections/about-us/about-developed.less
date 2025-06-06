@@ -1,0 +1,121 @@
+.developed {
+  margin: 120px 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 60px 0;
+  }
+
+  &__content {
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    &_photo {
+      width: 100%;
+      max-width: 440px;
+
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
+
+    &_sticky {
+      flex-basis: 40%;
+      position: sticky;
+      top: 110px;
+
+      @media screen and (max-width: 1199px) {
+        flex-basis: 45%;
+      }
+
+      @media screen and (max-width: 991px) {
+        flex-basis: 48%;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        flex-basis: 100%;
+        position: relative;
+        top: 0;
+      }
+    }
+
+    &_step {
+      position: relative;
+      flex-basis: 40%;
+      margin-top: 50px;
+
+      @media screen and (max-width: 1199px) {
+        flex-basis: 45%;
+      }
+
+      @media screen and (max-width: 991px) {
+        flex-basis: 48%;
+      }
+
+      @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+        margin-top: 40px;
+      }
+
+      &--item {
+
+        &:not(:last-child) {
+          padding-bottom: 60px;
+
+          @media screen and (max-width: 767px) {
+            padding-bottom: 30px;
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &--date {
+        position: relative;
+        width: 82px;
+        min-width: 82px;
+        height: 82px;
+        font: 16px/24px @fontPoppins;
+        font-weight: 700;
+        color: white;
+        background: #FFCF43;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: 767px) {
+          margin: 0;
+          margin-right: 30px;
+        }
+
+        @media screen and (max-width: 480px) {
+          width: 60px;
+          min-width: 60px;
+          height: 60px;
+          margin-right: 15px;
+        }
+      }
+
+      &--info {
+        font: 15px/22px @fontPoppins;
+        font-weight: 400;
+        color: #3E4C58;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+          text-align: left;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

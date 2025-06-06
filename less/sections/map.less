@@ -1,0 +1,63 @@
+.map {
+  margin: 140px 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 60px 0;
+  }
+
+  &__content {
+
+    &_info {
+      width: 100%;
+      max-width: 530px;
+
+      @media screen and (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+
+    &_list {
+      font: 16px/24px @fontPoppins;
+      font-weight: 400;
+      color: #3E4C58;
+      margin-top: 30px;
+      margin-bottom: 40px;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 0;
+      }
+
+      li {
+        flex-basis: 40%;
+        margin-bottom: 12px;
+        cursor: pointer;
+        transition: all .3s;
+
+        @media screen and (max-width: 991px) {
+         flex-basis: 33%;
+        }
+
+        @media screen and (max-width: 480px) {
+          flex-basis: 50%;
+        }
+
+        &:hover {
+          color: #FAB900;
+        }
+      }
+    }
+
+    &_photo {
+
+      svg {
+
+        @media screen and (max-width: 480px) {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+    }
+  }
+}

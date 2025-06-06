@@ -1,0 +1,137 @@
+.footer {
+  background: white;
+
+  &__top {
+    padding-top: 100px;
+    padding-bottom: 180px;
+
+    @media screen and (max-width: 991px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-bottom: 20px;
+    }
+
+    &_menu {
+
+      &--item {
+
+        @media screen and (max-width: 767px) {
+          flex-basis: 50%;
+          margin-bottom: 20px;
+        }
+      }
+
+      &--title {
+        font: 14px/16px @fontPoppins;
+        font-weight: 700;
+        color: @colortext;
+        letter-spacing: 1.12px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 15px 0;
+    }
+
+    a {
+      font: 16px/24px @fontPoppins;
+      font-weight: 400;
+      color: #283238;
+      text-decoration: none;
+
+      &:hover {
+        color: #FAB900;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 40px 0;
+    border-top: 1px solid #CCD3DE;
+
+    @media screen and (max-width: 991px) {
+      padding: 20px 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &_social {
+
+      @media screen and (max-width: 480px) {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &--item {
+        width: 24px;
+        height: 24px;
+        background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTM2IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMTM2IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTUuMTc1IDUuMzIwODNIMTcuMDAwOFYyLjE0MDgzQzE2LjY4NTggMi4wOTc1IDE1LjYwMjUgMiAxNC4zNDA4IDJDMTEuNzA4MyAyIDkuOTA1IDMuNjU1ODMgOS45MDUgNi42OTkxN1Y5LjVIN1YxMy4wNTVIOS45MDVWMjJIMTMuNDY2N1YxMy4wNTU4SDE2LjI1NDJMMTYuNjk2NyA5LjUwMDgzSDEzLjQ2NThWNy4wNTE2N0MxMy40NjY3IDYuMDI0MTcgMTMuNzQzMyA1LjMyMDgzIDE1LjE3NSA1LjMyMDgzWiIgZmlsbD0iIzU0NjI2RSIvPgo8cGF0aCBkPSJNNzcuOTk1IDIxLjk5OThWMjEuOTk5SDc4VjE0LjY2NEM3OCAxMS4wNzU3IDc3LjIyNzUgOC4zMTE1MiA3My4wMzI1IDguMzExNTJDNzEuMDE1OSA4LjMxMTUyIDY5LjY2MjUgOS40MTgxOSA2OS4xMSAxMC40NjczSDY5LjA1MTdWOC42NDY1Mkg2NS4wNzQyVjIxLjk5OUg2OS4yMTU5VjE1LjM4NzNDNjkuMjE1OSAxMy42NDY1IDY5LjU0NTkgMTEuOTYzMiA3MS43MDE3IDExLjk2MzJDNzMuODI1OCAxMS45NjMyIDczLjg1NzUgMTMuOTQ5OCA3My44NTc1IDE1LjQ5OVYyMS45OTk4SDc3Ljk5NVoiIGZpbGw9IiM1NDYyNkUiLz4KPHBhdGggZD0iTTU4LjMyODEgOC42NDc0Nkg2Mi40NzQ4VjIxLjk5OTlINTguMzI4MVY4LjY0NzQ2WiIgZmlsbD0iIzU0NjI2RSIvPgo8cGF0aCBkPSJNNjAuNDAxNyAyQzU5LjA3NTggMiA1OCAzLjA3NTgzIDU4IDQuNDAxNjZDNTggNS43Mjc0OCA1OS4wNzU4IDYuODI1ODEgNjAuNDAxNyA2LjgyNTgxQzYxLjcyNzUgNi44MjU4MSA2Mi44MDMzIDUuNzI3NDggNjIuODAzMyA0LjQwMTY2QzYyLjgwMjUgMy4wNzU4MyA2MS43MjY2IDIgNjAuNDAxNyAyVjJaIiBmaWxsPSIjNTQ2MjZFIi8+CjxwYXRoIGQ9Ik0xMzQuNDcxIDYuODQ2OTlDMTM0LjIyNiA1LjkyMzE2IDEzMy41MDMgNS4xOTU1OSAxMzIuNTg1IDQuOTQ4NjdDMTMwLjkyMSA0LjUgMTI0LjI1IDQuNSAxMjQuMjUgNC41QzEyNC4yNSA0LjUgMTE3LjU3OSA0LjUgMTE1LjkxNSA0Ljk0ODY3QzExNC45OTcgNS4xOTU2MyAxMTQuMjc0IDUuOTIzMTYgMTE0LjAyOSA2Ljg0Njk5QzExMy41ODMgOC41MjE0OCAxMTMuNTgzIDEyLjAxNTIgMTEzLjU4MyAxMi4wMTUyQzExMy41ODMgMTIuMDE1MiAxMTMuNTgzIDE1LjUwODggMTE0LjAyOSAxNy4xODMzQzExNC4yNzQgMTguMTA3MSAxMTQuOTk3IDE4LjgwNDQgMTE1LjkxNSAxOS4wNTEzQzExNy41NzkgMTkuNSAxMjQuMjUgMTkuNSAxMjQuMjUgMTkuNUMxMjQuMjUgMTkuNSAxMzAuOTIxIDE5LjUgMTMyLjU4NSAxOS4wNTEzQzEzMy41MDMgMTguODA0NCAxMzQuMjI2IDE4LjEwNzEgMTM0LjQ3MSAxNy4xODMzQzEzNC45MTcgMTUuNTA4OCAxMzQuOTE3IDEyLjAxNTIgMTM0LjkxNyAxMi4wMTUyQzEzNC45MTcgMTIuMDE1MiAxMzQuOTE3IDguNTIxNDggMTM0LjQ3MSA2Ljg0Njk5Wk0xMjIuMDY4IDE1LjE4NzFWOC44NDMxNkwxMjcuNjQ0IDEyLjAxNTJMMTIyLjA2OCAxNS4xODcxWiIgZmlsbD0iIzU0NjI2RSIvPgo8L3N2Zz4K") no-repeat center;
+        background-size: cover;
+        background-position: 0 0;
+        transition: all .3s;
+
+        &:hover {
+          opacity: .8;
+        }
+
+        &:not(:last-child) {
+          margin-right: 32px;
+        }
+
+        &.ln {
+          background-position: -56px 0;
+        }
+
+        &.yt {
+          background-position: -112px 0;
+        }
+      }
+    }
+
+    &_copyright {
+      flex-basis: 60%;
+
+      @media screen and (max-width: 991px) {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: auto;
+      }
+
+      &--item {
+        font: 14px/22px @fontPoppins;
+        font-weight: 400;
+        color: #283238;
+        text-decoration: none;
+
+        &:not(:last-child) {
+
+          @media screen and (max-width: 991px) {
+            margin-bottom: 5px;
+          }
+        }
+
+        &.link-copyright {
+
+          &:hover {
+            color: #FAB900;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+.our-services {
+
+  .first-section__content_info--trustpilot {
+
+    @media screen and (max-width: 767px) {
+      text-align: left;
+    }
+  }
+
+  &__content {
+    margin-top: 55px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    &_item {
+
+      @media screen and (max-width: 991px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 75px;
+
+        @media screen and (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        @media screen and (max-width: 991px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .our-services__content_info {
+          margin-left: 0;
+          margin-right: 80px;
+
+          @media screen and (max-width: 1199px) {
+            margin-right: 40px;
+          }
+
+          @media screen and (max-width: 991px) {
+            margin-right: 0;
+          }
+
+          ul, ol {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+              flex-basis: 50%;
+
+              @media screen and (max-width: 540px) {
+                flex-basis: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &_slider {
+      width: 100%;
+      max-width: 500px;
+
+      @media screen and (max-width: 1199px) {
+        max-width: 400px;
+      }
+
+      img {
+        border-radius: 30px;
+      }
+    }
+
+    &_info {
+      margin-left: 80px;
+
+      @media screen and (max-width: 1199px) {
+        margin-left: 40px;
+      }
+
+      @media screen and (max-width: 991px) {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      h2, h3, h4 {
+        font: 38px/48px @fontPoppins;
+        font-weight: 700;
+        color: #333E48;
+        margin-top: 0;
+        margin-bottom: 12px;
+        letter-spacing: -0.38px;
+
+        @media screen and (max-width: 767px) {
+          font-size: 28px;
+          line-height: 38px;
+        }
+      }
+
+      p {
+        font: 15px/22px @fontPoppins;
+        font-weight: 400;
+        color: #3E4C58;
+        margin-top: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+
+      ul, ol {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        @media screen and (max-width: 1199px) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        li {
+          font: 16px/24px @fontPoppins;
+          font-weight: 400;
+          color: #333E48;
+          background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguODAwMiAxNS45MDAxTDUuMzAwMiAxMi40MDAxQzQuOTEzNiAxMi4wMTM1IDQuMjg2NzkgMTIuMDEzNSAzLjkwMDIgMTIuNDAwMUMzLjUxMzYgMTIuNzg2NyAzLjUxMzYgMTMuNDEzNSAzLjkwMDIgMTMuODAwMUw4LjA5MzA5IDE3Ljk5MjlDOC40ODM2MSAxOC4zODM1IDkuMTE2NzggMTguMzgzNSA5LjUwNzMgMTcuOTkyOUwyMC4xMDAyIDcuNDAwMDVDMjAuNDg2OCA3LjAxMzQ1IDIwLjQ4NjggNi4zODY2NSAyMC4xMDAyIDYuMDAwMDVDMTkuNzEzNiA1LjYxMzQ1IDE5LjA4NjggNS42MTM0NSAxOC43MDAyIDYuMDAwMDVMOC44MDAyIDE1LjkwMDFaIiBmaWxsPSIjMzMzRTQ4Ii8+Cjwvc3ZnPgo=") no-repeat left top;
+          background-size: 24px 24px;
+          padding-left: 36px;
+          margin-bottom: 8px;
+
+          @media screen and (max-width: 1199px) {
+            flex-basis: 50%;
+            margin-bottom: 5px;
+          }
+
+          @media screen and (max-width: 767px) {
+            font-size: 15px;
+          }
+
+          @media screen and (max-width: 540px) {
+            flex-basis: 100%;
+          }
+        }
+      }
+
+      a {
+        position: relative;
+        display: block;
+        width: fit-content;
+        font: 16px/22px @fontPoppins;
+        font-weight: 600;
+        color: #333E48;
+        background: #F7CE46;
+        border: none;
+        border-radius: 40px;
+        padding: 17px 32px;
+        margin-top: 40px;
+        transition: all .3s;
+        z-index: 1;
+
+        @media screen and (max-width: 1199px) {
+          margin-top: 20px;
+        }
+
+        &:hover {
+          background: #F9DD7E;
+        }
+      }
+    }
+  }
+}

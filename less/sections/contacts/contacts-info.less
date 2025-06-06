@@ -1,0 +1,81 @@
+.contacts-info {
+  margin-bottom: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+
+  &__content {
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    &_map {
+      width: 100%;
+      min-height: 100%;
+
+      @media screen and (max-width: 767px) {
+        height: 300px;
+        min-height: inherit;
+      }
+
+      iframe {
+        height: 100%;
+
+        @media screen and (max-width: 767px) {
+          height: 300px;
+        }
+      }
+    }
+
+    &_block {
+      min-width: 350px;
+      font: 16px/24px @fontPoppins;
+      font-weight: 400;
+      color: #54626e;
+      background: #fff;
+      box-shadow: 0 4px 30px 0 rgba(0,0,0,.1);
+      padding: 40px;
+      padding-bottom: 15px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      @media screen and (max-width: 767px) {
+        min-width: inherit;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        padding: 15px;
+      }
+
+      &--title {
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      &--item {
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+
+      a {
+        display: block;
+        font: 16px/24px @fontPoppins;
+        font-weight: 400;
+        color: #f7ce46;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}

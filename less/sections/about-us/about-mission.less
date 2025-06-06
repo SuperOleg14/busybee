@@ -1,0 +1,43 @@
+.about-mission {
+  margin-top: 100px;
+  margin-bottom: 120px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+
+    &_item {
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
+
+      .block-title {
+        color: #283238;
+      }
+
+      &--text {
+        flex-basis: 60%;
+        font: 16px/24px @fontPoppins;
+        font-weight: 400;
+        color: #3e4c58;
+
+        @media screen and (max-width: 767px) {
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

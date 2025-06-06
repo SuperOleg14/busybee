@@ -1,0 +1,140 @@
+.services {
+
+  &__content {
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+
+    &_item {
+      flex-basis: 48%;
+      border-radius: 32px;
+      background: white;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 991px) {
+        display: block;
+        flex-basis: 100%;
+        max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      @media screen and (max-width: 767px) {
+        box-shadow: none;
+        background: transparent;
+        margin-bottom: 20px;
+      }
+
+      &--info {
+
+        @media screen and (max-width: 767px) {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: stretch;
+        }
+      }
+
+      &--photo {
+        position: relative;
+        max-height: 270px;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+        overflow: hidden;
+
+        @media screen and (max-width: 767px) {
+          max-height: 220px;
+          border-radius: 32px;
+          margin: 20px 0;
+        }
+      }
+
+      &--title {
+        font: 38px/48px @fontPoppins;
+        font-weight: 600;
+        color: #3E4C58;
+        letter-spacing: -0.38px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        padding: 0 32px;
+
+        @media screen and (max-width: 767px) {
+          font-size: 32px;
+          line-height: 38px;
+          color: #424A51;
+          letter-spacing: 0.96px;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 5px;
+          padding: 0;
+
+        }
+      }
+
+      &--subtitle {
+        display: none;
+        font: 16px/24px @fontPoppins;
+        font-weight: 400;
+        color: #4D545C;
+        text-align: center;
+        margin: 0;
+
+        @media screen and (max-width: 767px) {
+          display: block;
+        }
+      }
+
+      &--list {
+        padding: 0 32px;
+        margin: 0;
+        list-style: none;
+
+        @media screen and (max-width: 767px) {
+          padding: 0;
+        }
+
+        li {
+          font: 16px/24px @fontPoppins;
+          font-weight: 400;
+          color: #54626E;
+          background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTguODAwMDcgMTUuOUw1LjMwMDA3IDEyLjRDNC45MTM0NyAxMi4wMTM0IDQuMjg2NjcgMTIuMDEzNCAzLjkwMDA3IDEyLjRDMy41MTM0NyAxMi43ODY2IDMuNTEzNDcgMTMuNDEzNCAzLjkwMDA3IDEzLjhMOC4wOTI5NyAxNy45OTI5QzguNDgzNDkgMTguMzgzNCA5LjExNjY2IDE4LjM4MzQgOS41MDcxOCAxNy45OTI5TDIwLjEwMDEgNy4zOTk5OUMyMC40ODY3IDcuMDEzMzkgMjAuNDg2NyA2LjM4NjU5IDIwLjEwMDEgNS45OTk5OUMxOS43MTM1IDUuNjEzMzkgMTkuMDg2NyA1LjYxMzM5IDE4LjcwMDEgNS45OTk5OUw4LjgwMDA3IDE1LjlaIiBmaWxsPSIjMzMzRTQ4Ii8+Cjwvc3ZnPgo=") no-repeat left center;
+          background-size: 24px 24px;
+          padding-left: 36px;
+          margin-bottom: 8px;
+
+          @media screen and (max-width: 767px) {
+            color: black;
+            background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExM18xMzA0OSkiPgo8ZWxsaXBzZSBjeD0iOCIgY3k9IjgiIHJ4PSI4IiByeT0iOCIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzExM18xMzA0OSkiLz4KPHBhdGggZD0iTTQgOC4yNjUzMUw2LjU0NzkxIDEwLjcxNDNMMTEuMTQyOSA1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjwvZz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xMTNfMTMwNDkiIHgxPSItMC43ODk3MTMiIHkxPSI5LjMzMzMzIiB4Mj0iMTUuODc3IiB5Mj0iOS4zMzMzMyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkZENTVCIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGQkQwMCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzExM18xMzA0OSI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K") no-repeat left center;
+            background-size: 16px 16px;
+            padding-left: 24px;
+            margin-bottom: 12px;
+          }
+
+          @media screen and (max-width: 420px) {
+            flex-basis: 100%;
+          }
+        }
+      }
+
+      .block-btn {
+        margin: 40px 32px;
+
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          font-size: 16px;
+          line-height: 20px;
+          color: #2F363F;
+          background: #FCBD06;
+          padding: 14px;
+          letter-spacing: 0.48px;
+          border-radius: 6px;
+          text-transform: uppercase;
+          text-align: center;
+          margin: 0;
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}

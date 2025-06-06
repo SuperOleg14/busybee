@@ -1,0 +1,200 @@
+.help {
+  margin: 70px 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 40px 0;
+  }
+
+  .container {
+    max-width: 1305px;
+  }
+
+  &__content {
+    position: relative;
+    background: white url("/wp-content/themes/busybee/img/content/help-bg.png") no-repeat center;
+    background-size: cover;
+    padding: 50px 15px;
+    padding-top: 80px;
+    border-radius: 32px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1199px) {
+      background-position: right center;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-top: 30px;
+    }
+
+    &_title {
+      position: relative;
+      max-width: 715px;
+      font: 38px/48px @fontPoppins;
+      font-weight: 700;
+      color: #232536;
+      letter-spacing: -0.38px;
+      margin-bottom: 25px;
+      z-index: 1;
+
+      @media screen and (max-width: 767px) {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &_text {
+      position: relative;
+      max-width: 715px;
+      font: 18px/28px @fontPoppins;
+      font-weight: 400;
+      color: #54626E;
+      z-index: 1;
+
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .block-btn {
+      margin-top: 40px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 50px;
+      }
+    }
+
+    &_photo {
+      max-width: 443px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @media screen and (max-width: 1199px) {
+        max-width: 300px;
+      }
+
+      @media screen and (max-width: 991px) {
+        max-width: 200px;
+      }
+
+      &.photo-position-2 {
+        max-width: 315px;
+        left: inherit;
+        right: 0;
+
+        @media screen and (max-width: 1199px) {
+          max-width: 240px;
+        }
+
+        @media screen and (max-width: 991px) {
+          max-width: 170px;
+        }
+      }
+    }
+  }
+
+  &.help-ethics {
+
+    .help {
+
+      &__content {
+        position: relative;
+        background: white;
+        padding: 64px 102px;
+
+        @media screen and (max-width: 1199px) {
+          padding: 30px 15px;
+        }
+
+
+        &:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 620px;
+          height: 100%;
+          background: white url("/wp-content/themes/busybee/img/content/help-ethics-bg.png") no-repeat right center;
+          background-size: cover;
+
+          @media screen and (max-width: 1199px) {
+            opacity: .8;
+          }
+
+          @media screen and (max-width: 991px) {
+            width: 100%;
+            background-size: contain;
+            opacity: .6;
+          }
+
+          @media screen and (max-width: 767px) {
+            background-size: cover;
+            opacity: .2;
+          }
+        }
+
+        &_list {
+          max-width: 515px;
+          position: relative;
+          margin-top: 25px;
+          margin-bottom: 0;
+          padding: 0;
+          z-index: 1;
+
+          @media screen and (max-width: 767px) {
+            max-width: 100%;
+            margin-top: 15px;
+          }
+
+          li {
+            flex-basis: 50%;
+            font: 16px/24px @fontPoppins;
+            font-weight: 400;
+            color: #333E48;
+            background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExM18xMzA0OSkiPgo8ZWxsaXBzZSBjeD0iOCIgY3k9IjgiIHJ4PSI4IiByeT0iOCIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzExM18xMzA0OSkiLz4KPHBhdGggZD0iTTQgOC4yNjUzMUw2LjU0NzkxIDEwLjcxNDNMMTEuMTQyOSA1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjwvZz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xMTNfMTMwNDkiIHgxPSItMC43ODk3MTMiIHkxPSI5LjMzMzMzIiB4Mj0iMTUuODc3IiB5Mj0iOS4zMzMzMyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkZENTVCIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGQkQwMCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzExM18xMzA0OSI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K") no-repeat left center;
+            padding-left: 28px;
+            background-size: 16px 16px;
+            margin: 6px 0;
+
+            @media screen and (max-width: 767px) {
+              flex-basis: 100%;
+            }
+          }
+        }
+
+        &_photo {
+
+          &.photo-position-3 {
+            max-width: 424px;
+            top: 0;
+            bottom: inherit;
+
+            @media screen and (max-width: 991px) {
+              max-width: 250px;
+            }
+
+            @media screen and (max-width: 767px) {
+              display: none;
+            }
+          }
+
+          &.photo-position-4 {
+            max-width: 424px;
+            left: inherit;
+            right: 0;
+
+            @media screen and (max-width: 991px) {
+              max-width: 300px;
+            }
+
+            @media screen and (max-width: 767px) {
+              max-width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

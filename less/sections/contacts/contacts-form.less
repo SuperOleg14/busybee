@@ -1,0 +1,127 @@
+.contacts-form {
+
+  &__text {
+    max-width: 700px;
+    font: 18px/28px @fontPoppins;
+    font-weight: 400;
+    color: #54626e;
+    margin: 60px auto;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__block {
+    max-width: 900px;
+    margin: 70px auto;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+      background: #fff;
+      box-shadow: 0 4px 30px 0 rgba(0,0,0,.1);
+      padding: 40px;
+      padding-bottom: 14px;
+      border-radius: 15px;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        padding: 20px;
+        padding-bottom: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &_item {
+      flex-basis: 48%;
+
+      @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+      }
+
+      input:not([type="submit"]), textarea {
+        width: 100%;
+        display: block;
+        font: 20px/30px @fontPoppins;
+        font-weight: 400;
+        color: #54626e;
+        background: #fff;
+        padding: 12px 15px;
+        border-radius: 6px;
+        border: 1px solid #fbbf24;
+        box-shadow: none;
+
+        @media screen and (max-width: 767px) {
+          font-size: 18px;
+          line-height: 28px;
+          padding: 10px 15px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        &::placeholder {
+          font: 20px/30px @fontPoppins;
+          font-weight: 400;
+          color: #9CA6B0;
+
+          @media screen and (max-width: 767px) {
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      input {
+
+        &.agree {
+          display:none
+        }
+      }
+
+      textarea {
+        resize: none;
+        height: 128px;
+      }
+
+      .block-btn {
+        width: 100%;
+      }
+
+      .wpcf7-form-control-wrap {
+        display: block;
+        margin-bottom: 16px;
+
+        &[data-name="agree"] {
+          display: none;
+        }
+      }
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
