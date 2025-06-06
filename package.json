@@ -1,0 +1,30 @@
+{
+  "name": "wp-template",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "browser-sync": "^2.18.13",
+    "critical": "^1.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^2.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-include": "^2.4.1",
+    "gulp-less": "^4.0.1",
+    "gulp-lesshint": "^6.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "chart.js": "^4.3.0",
+    "del": "^5.1.0"
+  }
+}
